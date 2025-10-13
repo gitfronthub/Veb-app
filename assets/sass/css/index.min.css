@@ -247,7 +247,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 140px;
+  width: 125px;
   padding: 16px 0px;
   display: flex;
   gap: 8px;
@@ -256,6 +256,7 @@ img {
 }
 .footer__content__list .item p {
   display: none;
+  font-size: 15px;
 }
 .footer__content__list .item i {
   font-size: 20px;
@@ -264,7 +265,6 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 140px;
   padding: 16px 0px;
   display: flex;
   background-color: rgba(255, 255, 255, 0.5019607843);
