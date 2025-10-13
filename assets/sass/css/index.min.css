@@ -235,9 +235,6 @@ img {
   color: #2AB381;
 }
 
-.footer__content {
-  padding: 0px 20px;
-}
 .footer__content__list {
   display: flex;
   justify-content: space-between;
