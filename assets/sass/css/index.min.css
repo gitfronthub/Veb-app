@@ -66,9 +66,6 @@ img {
     width: 100%;
   }
 }
-.enter {
-  background-color: black;
-}
 .enter__content {
   height: 100vh;
   background-color: white;
@@ -101,7 +98,7 @@ img {
   font-size: 16px;
 }
 .enter__content__logo .link {
-  margin-top: 210px;
+  margin-top: 185px;
   background-color: #2FCA91;
   color: #101010;
   border-radius: 10px;
