@@ -1,0 +1,54 @@
+.footer {
+    &__content {
+        padding: 0px 20px;
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $black;
+            padding: 10px 10px;
+            border-radius: 16px;
+            .item {
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                width: 140px;
+                padding: 16px 0px;
+                display: flex;
+                gap: 8px;
+                color: $white;
+                transition: all 0.3s ease;
+                p {
+                    display: none;
+                }
+                i {
+                    font-size: 20px;
+                }
+                &:hover {
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 8px;
+                    width: 140px;
+                    padding: 16px 0px;
+                    display: flex;
+                    background-color: $gray;
+                    p {
+                        display: block;
+                    }
+                } 
+            }
+        }
+    }
+}
+.active {
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 140px;
+    padding: 16px 0px;
+    display: flex;
+    background-color: $gray;
+    p {
+        display: block;
+    }
+}

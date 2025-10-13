@@ -1,0 +1,65 @@
+.header {
+    &__content {
+        padding: 64px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+        overflow: hidden;
+        &__top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .btn {
+                font-size: 27px;
+                background-color: transparent;
+            }
+        }
+        &__bottom {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            overflow-x: auto;
+            width: 55vh;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .link {
+                width: 300px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background-color: $green;
+                padding: 8px 16px;
+                border-radius: 16px;
+                color: $black;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: $dark-green;
+                }
+                i {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+                .title {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 20px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    span {
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

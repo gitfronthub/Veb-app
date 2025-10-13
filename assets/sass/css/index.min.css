@@ -66,6 +66,70 @@ img {
     width: 100%;
   }
 }
+.header__content {
+  padding: 64px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  overflow: hidden;
+}
+.header__content__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__content__top .btn {
+  font-size: 27px;
+  background-color: transparent;
+}
+.header__content__bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  width: 55vh;
+}
+.header__content__bottom::-webkit-scrollbar {
+  display: none;
+}
+.header__content__bottom .link {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #F8F8F8;
+  padding: 8px 16px;
+  border-radius: 16px;
+  color: #101010;
+  transition: all 0.3s ease;
+}
+.header__content__bottom .link:hover {
+  background-color: #2AB381;
+}
+.header__content__bottom .link i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.header__content__bottom .link .title {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.header__content__bottom .link .title span {
+  font-weight: 400;
+  font-size: 15px;
+}
+
 .enter__content {
   height: 100vh;
   background-color: white;
@@ -99,7 +163,7 @@ img {
 }
 .enter__content__logo .link {
   margin-top: 185px;
-  background-color: #2FCA91;
+  background-color: #34E0A1;
   color: #101010;
   border-radius: 10px;
   padding: 15px 30px;
@@ -109,7 +173,7 @@ img {
 }
 .enter__content__logo .link:hover {
   background-color: #101010;
-  color: #2FCA91;
+  color: #34E0A1;
 }
 
 .login__content {
@@ -153,6 +217,10 @@ img {
 .login__content__form .text span {
   color: #4A4863;
 }
+.login__content__form a {
+  font-size: 14px;
+  color: #2AB381;
+}
 .login__content__form button {
   background-color: #2AB381;
   color: #101010;
@@ -165,4 +233,58 @@ img {
 .login__content__form button:hover {
   background-color: #101010;
   color: #2AB381;
+}
+
+.footer__content {
+  padding: 0px 20px;
+}
+.footer__content__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010;
+  padding: 10px 10px;
+  border-radius: 16px;
+}
+.footer__content__list .item {
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 140px;
+  padding: 16px 0px;
+  display: flex;
+  gap: 8px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer__content__list .item p {
+  display: none;
+}
+.footer__content__list .item i {
+  font-size: 20px;
+}
+.footer__content__list .item:hover {
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 140px;
+  padding: 16px 0px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+}
+.footer__content__list .item:hover p {
+  display: block;
+}
+
+.active {
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 140px;
+  padding: 16px 0px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5019607843);
+}
+.active p {
+  display: block;
 }/*# sourceMappingURL=index.min.css.map */
