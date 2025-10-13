@@ -77,7 +77,6 @@ img {
 .header__content__top {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -90,7 +89,7 @@ img {
   align-items: center;
   gap: 30px;
   overflow-x: auto;
-  width: 45vh;
+  width: 100%;
 }
 .header__content__bottom::-webkit-scrollbar {
   display: none;

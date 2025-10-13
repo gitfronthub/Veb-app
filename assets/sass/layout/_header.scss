@@ -9,7 +9,6 @@
         &__top {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             align-items: center;
             width: 100%;
             .btn {
@@ -22,7 +21,7 @@
             align-items: center;
             gap: 30px;
             overflow-x: auto;
-            width: 45vh;
+            width: 100%;
             &::-webkit-scrollbar {
                 display: none;
             }
