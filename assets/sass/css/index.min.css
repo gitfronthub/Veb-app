@@ -91,6 +91,7 @@ img {
   gap: 30px;
   overflow-x: auto;
   width: 100%;
+  scroll-behavior: smooth;
 }
 .header__content__bottom::-webkit-scrollbar {
   display: none;
@@ -162,7 +163,7 @@ img {
   font-size: 16px;
 }
 .enter__content__logo .link {
-  margin-top: 185px;
+  margin-top: 160px;
   background-color: #34E0A1;
   color: #101010;
   border-radius: 10px;
