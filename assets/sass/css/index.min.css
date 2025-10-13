@@ -90,7 +90,7 @@ img {
   align-items: center;
   gap: 30px;
   overflow-x: auto;
-  width: 55vh;
+  width: 45vh;
 }
 .header__content__bottom::-webkit-scrollbar {
   display: none;
