@@ -1,6 +1,10 @@
 .footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    margin:0 auto;
     &__content {
-        // padding: 0px 20px;
+        
         &__list {
             display: flex;
             justify-content: space-between;
@@ -8,12 +12,15 @@
             background-color: $black;
             padding: 10px 10px;
             border-radius: 16px;
+            gap: 10px;
+            flex: 1;
+            width: 100%;
             .item {
+                flex: 1;
                 align-items: center;
                 justify-content: center;
                 border-radius: 8px;
-                width: 125px;
-                padding: 16px 0px;
+                padding: 16px 0;
                 display: flex;
                 gap: 8px;
                 color: $white;
@@ -29,13 +36,13 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 8px;
-                    padding: 16px 0px;
+                    padding: 16px;
                     display: flex;
                     background-color: $gray;
                     p {
                         display: block;
                     }
-                } 
+                }
             }
         }
     }
@@ -44,8 +51,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    width: 140px;
-    padding: 16px 0px;
+    padding: 16px;
     display: flex;
     background-color: $gray;
     p {
