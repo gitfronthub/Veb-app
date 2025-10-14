@@ -30,7 +30,7 @@
             }
             .link {
                 margin-top: 160px;
-                @include btn($text-green, $black, 10px, 15px, 30px, 16px);
+                @include btn($dark-green, $black, 10px, 15px, 30px, 16px);
             }
         }
     }
