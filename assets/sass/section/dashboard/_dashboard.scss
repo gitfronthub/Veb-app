@@ -108,7 +108,6 @@
                         input:checked + .slider::before {
                             transform: translateX(26px);
                         }
-
                         input:checked + .slider::after {
                             transform: translateX(26px);
                             background-color: $dark-green;
