@@ -231,7 +231,7 @@ img {
 }
 .login__content__form .label .label__inp:focus + .label__span {
   transform: scale(0.9);
-  top: -15px;
+  top: -10px;
   left: 10px;
 }
 .login__content__form .text {
@@ -264,6 +264,7 @@ img {
   padding: 24px 0 0 0;
   overflow-y: auto;
   height: 75vh;
+  margin-bottom: 130px;
 }
 .dashboard::-webkit-scrollbar {
   display: none;
@@ -653,30 +654,45 @@ img {
 .tv__content__bottom .volume {
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 16px;
 }
 .tv__content__bottom .volume__title {
   font-size: 20px;
   font-weight: 500;
 }
-.tv__content__bottom .volume__progress {
+.tv__content__bottom .volume .progress-container {
   width: 100%;
-  height: 100px;
-  background-color: #F8F8F8;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.tv__content__bottom .volume__progress__bar {
-  width: 50%;
-  height: 100%;
-  background-color: #2ee59d;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 400;
-  color: #101010;
+}
+.tv__content__bottom .volume #progressRange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2ee59d 40%, #f5f5f5 40%);
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.tv__content__bottom .volume #progressRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 60px;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.tv__content__bottom .volume #progressValue {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  pointer-events: none;
 }
 .tv__content__bottom .card {
   display: flex;
@@ -904,30 +920,39 @@ img {
   flex-direction: column;
   gap: 24px;
 }
-.light__content__bottom .volume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.light__content__bottom .volume__progress {
-  width: 140px;
-  height: 400px;
-  background-color: #F8F8F8;
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex;
-  align-items: end;
-}
-.light__content__bottom .volume__progress__bar {
+.light__content__bottom .progress-container {
   width: 100%;
-  height: 50%;
-  background-color: #2ee59d;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 400;
-  color: #101010;
+}
+.light__content__bottom #progressRange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2ee59d 40%, #f5f5f5 40%);
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.light__content__bottom #progressRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 60px;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.light__content__bottom #progressValue {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  pointer-events: none;
 }
 
 .air {
@@ -1064,6 +1089,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  /* thumb (harakatlanuvchi chiziq) */
 }
 .air__content__bottom .header {
   display: flex;
@@ -1079,33 +1105,62 @@ img {
   font-size: 18px;
   font-weight: 500;
 }
-.air__content__bottom .volume {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 16px;
-}
-.air__content__bottom .volume__title {
-  font-size: 20px;
-  font-weight: 500;
-}
-.air__content__bottom .volume__progress {
-  width: 100%;
-  height: 100px;
-  background-color: #F8F8F8;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.air__content__bottom .volume__progress__bar {
-  width: 50%;
-  height: 100%;
-  background-color: #2ee59d;
+.air__content__bottom .weather-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: 400;
-  color: #101010;
+  flex-direction: column;
+}
+.air__content__bottom body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 80px;
+}
+.air__content__bottom .weather-box h1 {
+  font-size: 80px;
+  font-weight: 800;
+  margin: 0;
+}
+.air__content__bottom .weather-box .temp-unit {
+  font-size: 20px;
+  font-weight: 600;
+  color: #666;
+  margin-top: 4px;
+  margin-bottom: 40px;
+}
+.air__content__bottom .slider-box {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.air__content__bottom #temp-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 70px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2ee59d 48%, #f5f5f5 48%);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.air__content__bottom #temp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 6px;
+  height: 60px;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.air__content__bottom .slider-label {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  pointer-events: none;
 }
 .air__content__bottom .card {
   display: flex;

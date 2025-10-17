@@ -51,10 +51,15 @@
                             </div>
                             <div class="volume">
                                 <b class="volume__title"> Volume </b>
-                                <div class="volume__progress">
-                                    <div class="volume__progress__bar">
-                                        <span>40%</span>
-                                    </div>
+                                <div class="progress-container">
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="100"
+                                        value="40"
+                                        id="progressRange"
+                                    />
+                                    <span id="progressValue">40%</span>
                                 </div>
                             </div>
                             <div class="card">
@@ -88,5 +93,6 @@
                 </div>
             </section>
         </main>
+        <script src="./assets/js/base.js"></script>
     </body>
 </html>
