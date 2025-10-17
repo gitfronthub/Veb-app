@@ -1109,12 +1109,31 @@ img {
 }
 .air__content__bottom .card {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 .air__content__bottom .card__title {
   font-size: 20px;
   font-weight: 500;
+}
+.air__content__bottom .card__list {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+.air__content__bottom .card__list__item {
+  flex: 1;
+  background-color: #F8F8F8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #101010;
+  padding: 17px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .footer {
