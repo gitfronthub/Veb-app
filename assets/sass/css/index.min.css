@@ -263,8 +263,8 @@ img {
 .dashboard {
   padding: 24px 0 0 0;
   overflow-y: auto;
-  height: 75vh;
-  margin-bottom: 130px;
+  height: 70vh;
+  padding: 0px 0px 100px 0px;
 }
 .dashboard::-webkit-scrollbar {
   display: none;
